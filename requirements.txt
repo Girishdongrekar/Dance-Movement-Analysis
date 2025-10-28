@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+opencv-python
+mediapipe
+numpy
+pytest
+python-multipart
+streamlit
+requests
+
+
