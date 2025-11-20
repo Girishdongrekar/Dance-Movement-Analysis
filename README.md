@@ -61,29 +61,6 @@ Streamlit UI → http://localhost:8501
 
 FastAPI Docs → http://localhost:8000/docs
 
-☁️ Cloud Deployment (AWS / GCP / VPS)
-1️⃣ Deploy to AWS EC2 (Example)
-
-# Connect to EC2
-ssh -i "your-key.pem" ubuntu@your-ec2-public-ip
-
-# Install Docker
-sudo apt update && sudo apt install -y docker.io
-
-# Clone your repo
-git clone https://github.com/Girishdongrekar/Dance-Movement-Analysis.git
-cd Dance-Movement-Analysis
-
-# Build & run
-sudo docker build -t dance-ui-api .
-sudo docker run -d -p 8501:8501 -p 8000:8000 dance-ui-api
-Then access:
-
-Streamlit UI → http://<your-ec2-public-ip>:8501
-
-FastAPI Docs → http://<your-ec2-public-ip>:8000/docs
-
-(Make sure you open ports 8501 & 8000 in your EC2 security group settings.)
 
 🧠 Tech Stack
 
